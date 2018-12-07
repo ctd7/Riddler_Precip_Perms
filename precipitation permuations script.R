@@ -15,7 +15,7 @@ for (i in 1:sz[1]) {  # This is going through every possible iteration
   ou = oui
   for(j in 0:(sz[2]/2 - 1)) {  # Going through each workday
     
-    if (rain[i,2*j+2] == 1) {  # Since the chain of rain when leaving the house is 50%, just checks if it is raining when leaving the office
+    if (rain[i,2*j+2] == 1) {  # Since the chance of rain when leaving the house is 50%, only need to check when leaving the office
       probp = probp *0.5 * 0.4 # Calculates the probability of these events occuring. Since it is conditional probability, must multiply.
     }
     
